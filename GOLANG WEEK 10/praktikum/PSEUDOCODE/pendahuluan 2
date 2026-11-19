@@ -1,0 +1,22 @@
+program UAS 
+KAMUS 
+	t, h, k : integer
+	hasil : string
+
+ALGORITMA
+	input(t, h, k)
+	hasil <- "TIDAK BOLEH UAS"
+
+	if h*100 >= 75*t and k>= 8 then 
+		hasil <- "BOLEH UAS"
+	endif
+
+	output(hasil)
+endprogram
+
+Program ini membaca tiga bilangan bulat: t, h, dan k. Dari kodenya, t kemungkinan
+ total pertemuan, h jumlah kehadiran, dan k nilai atau jumlah tertentu yang batas minimalnya 8.
+  Hasil awalnya “TIDAK BOLEH UAS”. Kalau kehadiran minimal 75% dari total pertemuan (dicek lewat h*100 >= 75*t)
+   dan k minimal 8, hasilnya berubah jadi “BOLEH UAS”. Kalau salah satu syarat tidak terpenuhi, 
+   hasilnya tetap “TIDAK BOLEH UAS”. Contohnya, input 16 12 8 menghasilkan “BOLEH UAS” karena 1100 >= 1050 
+   dan 8 >= 8, sedangkan 16 11 10 menghasilkan “TIDAK BOLEH UAS” karena 1000 < 1050.

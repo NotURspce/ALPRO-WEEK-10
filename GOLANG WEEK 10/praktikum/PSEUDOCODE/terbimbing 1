@@ -1,0 +1,24 @@
+program pembayaran 
+KAMUS 
+	s, p : integer
+
+ALGORITMA
+	input(s, p)
+
+	if (s >= 0 && s <= 1000000) && (p >= 0 && p <= 1000000) then 
+		if s > p then
+			output("PEMBAYARAN BERHASIL")
+		endif else if s == p then 
+			output("SALDO SANGAT PAS")
+		endif else then 
+			output("SALDO TIDAK CUKUP")
+		endif
+	endif 
+endprogram
+
+Program ini membaca dua bilangan bulat, s (kemungkinan saldo) dan p (kemungkinan harga pembayaran).
+ Pengecekan hanya jalan kalau keduanya ada di rentang 0 sampai 1.000.000; di luar rentang itu program 
+ tidak menampilkan apa-apa. Di dalam rentang, kalau s lebih besar dari p hasilnya “PEMBAYARAN BERHASIL”,
+  kalau sama persis hasilnya “SALDO SANGAT PAS”, dan kalau s lebih kecil hasilnya “SALDO TIDAK CUKUP”.
+   Contohnya, input 20000 15000 menghasilkan “PEMBAYARAN BERHASIL”, 15000 15000 menghasilkan “SALDO SANGAT PAS”, 
+   dan 12000 15000 menghasilkan “SALDO TIDAK CUKUP”.

@@ -1,0 +1,12 @@
+program tangki_air
+kamus
+    t, v, total : int
+Algoritma
+    total <- 0
+    input (t)
+    repeat
+        input (v)
+        total <- total + v
+        output (total >= t)
+    until (total >= t)
+endprogram

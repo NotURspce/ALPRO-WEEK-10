@@ -1,0 +1,14 @@
+program digit
+kamus
+    x, d, total : int
+Algoritma
+    total <- 0
+    input (x)
+    while (x > 0) do
+        d <- x mod 10
+        output (d)
+        total <- total + d
+        x <- x div 10
+    endwhile
+    output (total)
+endprogram

@@ -1,0 +1,13 @@
+program cangkir_kopi
+kamus
+    n, m, x, y, cangkir : int
+Algoritma
+    cangkir <- 0
+    input (n, m, x, y)
+    while (n >= x and m >= y) do
+        n <- n - x
+        m <- m - y
+        cangkir <- cangkir + 1
+    endwhile
+    output (cangkir)
+endprogram

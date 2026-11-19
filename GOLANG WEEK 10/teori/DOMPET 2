@@ -1,0 +1,12 @@
+program dompet
+kamus
+    x, saldo : int
+Algoritma
+    saldo <- 0
+    input (x)
+    while (x != 0) do
+        saldo <- saldo + x
+        input (x)
+    endwhile
+    output (saldo)
+endprogram

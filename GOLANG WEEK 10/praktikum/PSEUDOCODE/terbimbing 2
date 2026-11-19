@@ -1,0 +1,25 @@
+program pasar 
+KAMUS 
+    daging, menu : string
+
+ALGORITMA
+    input(daging, menu)
+    output("Daging :", daging)
+
+    if menu == "sop" then 
+        output("Tambahan : Sayur")
+    endif else if menu == "katsu" then 
+        output("Tambahan : Tepung")
+    endif else if menu == "teriyaki" then
+        output("Tambahan : Bombay")
+    endif else if menu == "semur" then
+        output("Tambahan : Kecap")
+    endif 
+endprogram
+
+Program ini membaca dua kata: daging (jenis daging) dan menu (jenis masakan). 
+Daging selalu ditampilkan lebih dulu dengan format “Daging : ...”. Setelah itu program mencocokkan menu dengan 
+empat pilihan: kalau “sop” tambahannya “sayur”, kalau “katsu” tambahannya “tepung”, kalau “teriyaki” 
+tambahannya “bombay”, dan kalau “semur” tambahannya “kecap”. Kalau menu di luar keempat pilihan itu, 
+hanya baris daging yang tampil. Contohnya, input ayam katsu menghasilkan “Daging : ayam” lalu “Tambahan : tepung”, 
+sedangkan sapi rawon hanya menghasilkan “Daging : sapi”.

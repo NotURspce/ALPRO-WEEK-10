@@ -1,0 +1,15 @@
+program durasi_tidur
+Kamus  
+    a, b durasi : integer
+
+Algoritma
+    input(a , b)
+    
+    if b >= a then
+        durasi = b - 
+    else then
+        durasi = 24 - a + b
+    endif
+    
+    output(durasi)
+endprogram

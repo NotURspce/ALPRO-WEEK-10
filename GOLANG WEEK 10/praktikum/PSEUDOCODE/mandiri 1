@@ -1,0 +1,13 @@
+program bahasa_inggris
+KAMUS
+    s : integer
+
+Algoritma
+    input(s)
+
+    if s >= 450 then
+        output("KELAS REGULER")
+    else then 
+            output("KELAS MATRIKULASI")
+    endif
+endprogram

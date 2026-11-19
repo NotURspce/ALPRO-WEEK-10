@@ -1,0 +1,19 @@
+program konsekutif
+kamus
+    x, sebelum, sekarang : int
+    ya : boolean
+Algoritma
+    input (x)
+    ya <- true
+    sebelum <- x mod 10
+    x <- x div 10
+    while (x > 0 and ya) do
+        sekarang <- x mod 10
+        if (sebelum - sekarang != 1 and sekarang - sebelum != 1) then
+            ya <- false
+        endif
+        sebelum <- sekarang
+        x <- x div 10
+    endwhile
+    output (ya)
+endprogram
